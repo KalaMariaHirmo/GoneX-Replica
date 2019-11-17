@@ -149,7 +149,8 @@
 .works {
     text-align: center;
 }
-.works .list{
+
+.works .list {
     width: fit-content;
 }
 
@@ -240,7 +241,7 @@
     background-image: url('../img/aboutus.jpg');
     background-position: cover;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     text-align: center;
     font-size: 1rem;
 }
@@ -252,12 +253,13 @@
 .about>p {
     width: 45%;
     line-height: 250%;
+    padding-bottom: 50px;
 }
 
 .stats {
     background-position: cover;
     width: 100%;
-    height: 270px;
+    height: 100%;
     text-align: center;
     font-size: 1rem;
 }
@@ -273,7 +275,7 @@
     line-height: 250%;
 }
 
-.bar{
+.bar {
     height: 20px;
     max-width: 75%;
     margin: 0 auto 10px auto;
@@ -282,8 +284,9 @@
     color: white;
     padding: 0 0 0 10px;
     position: relative;
-  }
-  .bar::before{
+}
+
+.bar::before {
     content: '';
     width: 100%;
     position: absolute;
@@ -292,8 +295,9 @@
     top: 0;
     z-index: -2;
     background: #ecf0f1;
-  }
-  .bar::after{
+}
+
+.bar::after {
     content: '';
     background: #2ecc71;
     height: 20px;
@@ -305,51 +309,60 @@
     top: 0;
     left: 0;
     z-index: -1;
-  }
-  @-webkit-keyframes bar-before{
-    0%{
-      width: 0px;
+}
+
+@-webkit-keyframes bar-before {
+    0% {
+        width: 0px;
     }
-    100%{
-      width: 100%;
+    100% {
+        width: 100%;
     }
-  }
-  .barphotography::after{
+}
+
+.barphotography::after {
     max-width: 96%;
-  }
-  .bargraphicdesign::after{
+}
+
+.bargraphicdesign::after {
     max-width: 88%;
-  }
-  .barapp::after{
+}
+
+.barapp::after {
     max-width: 83%;
-  }
-  .barprogramming::after{
+}
+
+.barprogramming::after {
     max-width: 99%;
-  }
-  .barweb::after{
+}
+
+.barweb::after {
     max-width: 90%;
-  }
-  .contact {
-      margin-top: 50px;
-      position: relative;
-      text-align: center;
-      color: #696969;
-      background-color: #212121;
-  }
-  .contact .btn{
-      width: fit-content;
-      padding-top: 30px;
-  }
-  .contact .email{
-    
+}
+
+.contact {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    color: #696969;
+    background-color: #212121;
+}
+
+.contact .btn {
+    width: fit-content;
+    padding-top: 30px;
+}
+
+.contact .email {
     padding-top: 5px;
     padding-left: 2px;
     padding-right: 200px;
     padding-bottom: 5.5px;
     float: left;
     border: solid 2px #696969;
-  }
-  .contact button {
+}
+
+.contact button {
     margin-left: 3px;
     background-color: red;
     border: 1px solid crimson;
@@ -361,36 +374,43 @@
     padding: 7px 24px;
     text-decoration: none;
 }
-.contact button:hover{
+
+.contact button:hover {
     background-color: crimson;
 }
-.info{
+
+.info {
     height: 60px;
     width: fit-content;
     padding-top: 30px;
-    
 }
-.info > p{
+
+.info>p {
     float: left;
     margin: 0 10px;
 }
+
 .bottom {
     color: #77d42a;
     background-color: black;
     text-align: center;
     padding: 15px;
 }
+
 @media (max-width: 768px) {
     .header p {
         width: 75%;
         padding: 20px;
     }
-    .whatwedo{
+    .whatwedo {
         width: 620px;
         grid-template-columns: 1fr 1fr;
         height: 1000px;
-    }    
-    .works li a{
+    }
+    .stats>p {
+        width: 80%;
+    }
+    .works li a {
         padding: 14px 10px;
     }
     .about>p {
@@ -398,60 +418,59 @@
         line-height: 250%;
     }
 }
+
 @media (max-width: 420px) {
     .menu .end {
         margin-right: 0;
     }
-    .menu li a{
-        padding: 14px 10px;
+    .menu .logo {
+        display: none;
     }
-    .whatwedo{
+    .menu li a {
+        padding: 14px 7px;
+    }
+    .whatwedo {
         width: 300px;
         grid-template-columns: 1fr;
         height: 1700px;
-    }    
-    .works li a{
+    }
+    .works li a {
         padding: 8px 20px;
     }
-    .stats>p {
-        width: 70%;
+    .contact .email {
+        padding-right: 130px;
     }
-    .contact .email{
-    padding-right: 130px;
+    .info>p {
+        margin: 2px 0;
+        float: none;
     }
-    .info > p{
-     margin: 2px 0;
-     float: none;   
-    }
-    .info{
+    .info {
         height: 100px;
         width: fit-content;
         padding-top: 30px;
-    }    
-}
-@media (max-width: 320px) {
-    .menu li a{
-        padding: 14px 6.4px;
     }
-    .menu .logo{
-        display: none;
-    }
-    .header > h1{
-        font-size: 1.85rem;
-    }
-    .works .list{
-        max-width: 300px;
-    }
-    .works li{
+    .works li {
         float: none;
     }
-    .about {
-        height: 500px;
+}
+
+@media (max-width: 320px) {
+    .menu li a {
+        padding: 10px 5px;
+        font-size: 0.8rem;
     }
-    .stats > p{
+
+    .header>h1 {
+        font-size: 1.6rem;
+    }
+    .works .list {
+        max-width: 300px;
+    }
+
+    .stats>p {
         width: 100%;
     }
-    .contact .email{
-        padding-right: 50px;
-        }
+    .contact .email {
+        padding-right: 5px;
+    }
 }
