@@ -1,42 +1,43 @@
 * {
     margin: 0 auto;
+    font-family: 'Lexend Exa', sans-serif;
+    /*border: 1px solid red;*/
 }
+
 .menu li {
     float: right;
 }
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-  
-  .menu li a {
+}
+
+.menu li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  .menu li a:hover {
+}
+
+.menu li a:hover {
     background-color: #111;
-  }
-.menu .end{
+}
+
+.menu .end {
     margin-right: 5rem;
 }
-.menu .logo{
+
+.menu .logo {
     margin-top: -0.5rem;
     font-size: 1.5rem;
 }
-@media (max-width: 600px) {
-    .menu .end {
-        margin-right: 0;
-    }
-}
-.header{
+
+.header {
     text-align: center;
     background: url('../img/gone.jpg');
     background-position: center;
@@ -45,30 +46,412 @@
     display: grid;
     align-content: center;
 }
+
 .header p {
-    margin: 2rem;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-.header button {
-	box-shadow:inset 0px 1px 0px 0px #caefab;
-	background-color:#77d42a;
-	border-radius:6px;
-	border:1px solid #268a16;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding:7px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #aade7c;
-}
-.header button:hover {
-	background-color:#5cb811;
-}
-.header button:active {
-	position:relative;
-	top:1px;
+    width: 50%;
+    padding: 20px;
 }
 
+.header button {
+    background-color: #77d42a;
+    border: 1px solid #268a16;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 7px 24px;
+    text-decoration: none;
+}
+
+.header button:hover {
+    background-color: #5cb811;
+}
+
+.header button:active {
+    position: relative;
+    top: 1px;
+}
+
+.whatwedo {
+    width: 940px;
+    height: 800px;
+    display: grid;
+    text-align: center;
+    gap: 20px;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.whatwedo>div {
+    width: 300px;
+    height: 250px;
+    background-color: whitesmoke;
+}
+
+.whatwedo .title {
+    background-color: white;
+    font-size: 1rem;
+    color: gray;
+}
+
+.whatwedo .title>h1 {
+    padding-top: 10%;
+}
+
+.whatwedo .title>h2 {
+    font-size: 4rem;
+    color: red;
+    padding: 0;
+}
+
+.whatwedo .title>p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.whatwedo h2 {
+    font-size: 1rem;
+    padding-top: 16%;
+}
+
+.whatwedo p {
+    color: gray;
+    font-size: 0.8rem;
+    padding: 10%;
+}
+
+.whatwedo a {
+    color: red;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.video {
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    background-image: url(https://www.123freevectors.com/wp-content/original/131187-cool-red-geometric-polygon-background-vector.jpg);
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.video h2 {
+    padding-top: 25vh;
+    font-size: 4rem;
+}
+
+.video p {
+    font-size: 1rem;
+}
+
+.works {
+    text-align: center;
+}
+.works .list{
+    width: fit-content;
+}
+
+.works h1 {
+    font-size: 3rem;
+}
+
+.works p {
+    color: grey;
+    font-size: 1rem;
+    width: 76%;
+    line-height: 250%;
+}
+
+.works li {
+    float: left;
+}
+
+.works ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.works li a {
+    display: inline-block;
+    text-align: center;
+    color: #111;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.works li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    font-size: 1rem;
+}
+
+.gallery>img {
+    display: inline-block;
+}
+
+.gallery .one {
+    width: 25vw;
+}
+
+.gallery .two {
+    width: 25vw;
+}
+
+.gallery .three {
+    background-image: url(http://lorempixel.com/200/101/);
+    background-size: cover;
+    width: 25vw;
+    text-align: center;
+    height: 100%;
+}
+
+.gallery .three>h2 {
+    padding-top: 10%;
+    color: rgb(0, 222, 0);
+}
+
+.gallery .three>p {
+    color: red;
+}
+
+.gallery .four {
+    width: 25vw;
+}
+
+.gallery .five {
+    width: 25vw;
+}
+
+.gallery .six {
+    width: 50vw;
+}
+
+.about {
+    background-image: url('../img/aboutus.jpg');
+    background-position: cover;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about>h1 {
+    padding-top: 10vh;
+}
+
+.about>p {
+    width: 45%;
+    line-height: 250%;
+}
+
+.stats {
+    background-position: cover;
+    width: 100%;
+    height: 270px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.stats>h1 {
+    padding-top: 10vh;
+}
+
+.stats>p {
+    padding-top: 3vh;
+    width: 40%;
+    color: gray;
+    line-height: 250%;
+}
+
+.bar{
+    height: 20px;
+    max-width: 75%;
+    margin: 0 auto 10px auto;
+    line-height: 20px;
+    font-size: 1rem;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+  }
+  .bar::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 20px;
+    top: 0;
+    z-index: -2;
+    background: #ecf0f1;
+  }
+  .bar::after{
+    content: '';
+    background: #2ecc71;
+    height: 20px;
+    transition: 0.7s;
+    display: block;
+    width: 100%;
+    -webkit-animation: bar-before 1 1.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  @-webkit-keyframes bar-before{
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+  .barphotography::after{
+    max-width: 96%;
+  }
+  .bargraphicdesign::after{
+    max-width: 88%;
+  }
+  .barapp::after{
+    max-width: 83%;
+  }
+  .barprogramming::after{
+    max-width: 99%;
+  }
+  .barweb::after{
+    max-width: 90%;
+  }
+  .contact {
+      margin-top: 50px;
+      position: relative;
+      text-align: center;
+      color: #696969;
+      background-color: #212121;
+  }
+  .contact .btn{
+      width: fit-content;
+      padding-top: 30px;
+  }
+  .contact .email{
+    
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 200px;
+    padding-bottom: 5.5px;
+    float: left;
+    border: solid 2px #696969;
+  }
+  .contact button {
+    margin-left: 3px;
+    background-color: red;
+    border: 1px solid crimson;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 7px 24px;
+    text-decoration: none;
+}
+.contact button:hover{
+    background-color: crimson;
+}
+.info{
+    height: 60px;
+    width: fit-content;
+    padding-top: 30px;
+    
+}
+.info > p{
+    float: left;
+    margin: 0 10px;
+}
+.bottom {
+    color: #77d42a;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width: 768px) {
+    .header p {
+        width: 75%;
+        padding: 20px;
+    }
+    .whatwedo{
+        width: 620px;
+        grid-template-columns: 1fr 1fr;
+        height: 1000px;
+    }    
+    .works li a{
+        padding: 14px 10px;
+    }
+    .about>p {
+        width: 75%;
+        line-height: 250%;
+    }
+}
+@media (max-width: 420px) {
+    .menu .end {
+        margin-right: 0;
+    }
+    .menu li a{
+        padding: 14px 10px;
+    }
+    .whatwedo{
+        width: 300px;
+        grid-template-columns: 1fr;
+        height: 1700px;
+    }    
+    .works li a{
+        padding: 8px 20px;
+    }
+    .stats>p {
+        width: 70%;
+    }
+    .contact .email{
+    padding-right: 130px;
+    }
+    .info > p{
+     margin: 2px 0;
+     float: none;   
+    }
+    .info{
+        height: 100px;
+        width: fit-content;
+        padding-top: 30px;
+    }    
+}
+@media (max-width: 320px) {
+    .menu li a{
+        padding: 14px 6.4px;
+    }
+    .menu .logo{
+        display: none;
+    }
+    .header > h1{
+        font-size: 1.85rem;
+    }
+    .works .list{
+        max-width: 300px;
+    }
+    .works li{
+        float: none;
+    }
+    .about {
+        height: 500px;
+    }
+    .stats > p{
+        width: 100%;
+    }
+    .contact .email{
+        padding-right: 50px;
+        }
+}
